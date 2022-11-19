@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/circe" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type = "text/css">
+    <title>Рубашка Medicine купить за 2227 &#8381;</title>
+</head>
+<body>
+  <div class="MainBlock">
+    
+    <div class = "ImageShirts">
+      <div class="shirtss">
+        <div class ="img1">
+          <img id = "image1" width="90px" height="130px" onclick="imgChange1()" src="img/shirt1.png">
+        </div>
+        <div class ="img2">
+          <img id = "image2" width="90px" height="130px" onclick="imgChange2()" src="img/shirt2.png">
+        </div>
+        <div class ="img3">
+          <img id = "image3" width="90px" height="130px" onclick="imgChange3()" src="img/shirt3.png">
+        </div>
+        <div class = "conteyner">
+          <img onclick="imgNext()" class = "scroll swiper-button-next" src = "img/avail.png">
+        </div>
+      </div>
+      
+    </div>
+    <div class="ImageHead">
+      <div>
+        <img id = "mainImg" class = "rubachka" width="340" height="492"  src="img/shirt_head.png">
+      </div>
+    </div>
+  <div class="Information"> 
+    <div class="menu">
+      <div class="menuItem">Каталог</div>
+      <div class="menuItem">&rarr;</div>
+      <div class="menuItem">Женщинам</div>
+      <div class="menuItem">&rarr;</div>
+      <div class="menuItem obuv">Обувь</div>
+      <div class="threeDots">...</div>
+      <div class="menuItem">&rarr;</div>
+      <div class="menuItem">Кроссовки</div>
+    </div>
+    <div class="containerMain">
+      <div class ="Model">рубашка medicine</div>
+      <div class="Offers">
+        <a href="#" class="offer">Рубашки Medicine</a>
+        <a href="#" class="offer">Все модели Medicine</a>
+        <a href="#" class="offer">Рубашки</a>
+      </div>
+      <div class="Prices">
+        <div class ="Price1">
+          <div class="old_price">2 699</div>
+          <div class="new_price">2 499 &#8381; </div>
+        </div>
+        <div class="Price2">
+          <div class="discount_price">2 227 &#8381;</div>
+        <span class = "Prices2"> &nbsp; &mdash; &nbsp; c промокодом</span>
+        </div>
+        
+      </div>
+      <div class="GrayBackGround">
+        <div class = "Availability">
+          <img src = "img/Layer 99.png">
+          <span class ="AvailText"> В наличии в магазине <a href="#" class = "ColorAvail">Lamoda</a></span>
+        </div>
+        <div class = "Delivery">
+          <img src = "img/delivery.png">
+          <span class = "DelivText"> Бесплатная доставка</span>
+        </div>
+      </div>
+    </div>
+    <div class="Buttons">
+      <div class = "Button1">
+        <a href="#" class = "To_store">В МАГАЗИН
+        </a>
+      </div>
+      <div class = "Button2">
+        <a href="#" class = "To_favorites">В ИЗБРАННОЕ
+        </a>
+        <div class="share">
+          <img src="img/Forma 1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <hr style="color:dark">
+      <div class ="lala"><p>подробнее</p>
+        <div class="avail"><img style="margin-right: 10px;" src="img/avail.png" alt=""></div></div> 
+      <hr style="color:dark">
+    </div>
+    <div class="Description">
+      <p>Рубашка Medicine выполнена из вискозной ткани с клетчатым узором. <br>Детали: прямой крой, отложной воротник; планка и манжеты на пуговицах; карман на груди. </p>
+    </div>
+    <div class="Social_networks">
+      <div class="Text">ПОДЕЛИТЬСЯ:</div>
+
+        <a href ="https://vk.com/darya_best" class = "imageCircle">
+          <img src="img/vk.png" alt="">
+        </a>        
+        <a href="#" class = "imageCircle">
+          <img src="img/google.png" class="Google"/>
+        </a>
+        <a href ="#" class = "imageCircle">
+              <img src="img/facebook.png" class="Facebook"/>
+        </a>
+        <a href="#" class = "imageCircle">
+                  <img src="img/twitter.png" class="Twitter"/>
+        </a>
+
+
+        <div class="Pointer">
+          <img src="img/rect2.png">
+          <p>123</p></div>
+     
+    </div>
+
+  </div>
+ 
+
+  <script>
+    var imageMain = document.getElementById("mainImg");
+    var count = 3;
+    function imgChange2()
+    {
+      var img1 = document.getElementById("image2");
+      var temp = img1.src;
+      img1.src = imageMain.src;
+      imageMain.src = temp;
+    }
+
+    function imgChange1()
+    {
+      var img1 = document.getElementById("image1");
+      var temp = img1.src;
+      img1.src = imageMain.src;
+      imageMain.src = temp;
+    }
+
+    function imgChange3()
+    {
+      var img1 = document.getElementById("image3");
+      var temp = img1.src;
+      img1.src = imageMain.src;
+      imageMain.src = temp;
+    }
+    
+    function imgNext()
+    {
+      count++;
+      if (count % 3 == 0)
+        imgChange1();
+      else if (count % 3 == 1)
+        imgChange2();
+        else
+          imgChange3();
+    }
+
+  </script>
+  </div>
+</body>
+</html>
